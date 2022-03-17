@@ -28,5 +28,12 @@ public class TarxetaMoedeiro {
     public String toString() {
         return super.toString(); //To change body of generated methods, choose Tools | Templates.
     }
-
+    
+    public int pagarCafe(){
+        if (this.saldo>=1){
+            return this.saldo-1;
+        }else{
+            return -1;
+        }
+    }
 }
